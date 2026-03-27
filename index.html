@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AzGlobe | Nazir İbrahimov</title>
+    <style>
+        :root { --primary: #bc0000; --dark: #0f0f0f; --light: #ffffff; --gray: #f8f9fa; --gold: #d4af37; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; background: var(--gray); color: #222; }
+        header { background: var(--dark); color: white; padding: 35px 20px; text-align: center; border-bottom: 6px solid var(--primary); }
+        .logo { font-size: 42px; font-weight: 900; letter-spacing: 5px; text-transform: uppercase; margin: 0; }
+        .logo span { color: var(--primary); }
+        .founder { color: var(--gold); font-size: 14px; margin-top: 8px; font-weight: bold; letter-spacing: 2px; }
+        .nav { background: #1a1a1a; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        .nav a { color: #fff; margin: 0 18px; text-decoration: none; font-weight: bold; font-size: 14px; transition: 0.3s; }
+        .nav a:hover { color: var(--primary); }
+        .breaking-strip { background: var(--primary); color: white; padding: 12px; font-weight: 900; font-size: 15px; text-transform: uppercase; }
+        
+        .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; display: grid; grid-template-columns: 1fr; gap: 35px; }
+        @media (min-width: 900px) { .container { grid-template-columns: 2.5fr 1fr; } }
+        
+        .main-news { background: white; border-radius: 4px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.15); margin-bottom: 40px; }
+        .main-news img { width: 100%; height: 500px; object-fit: cover; border-bottom: 8px solid var(--primary); }
+        .content { padding: 30px; }
+        .badge { background: var(--primary); color: white; padding: 6px 15px; border-radius: 2px; font-size: 12px; font-weight: bold; }
+        h1 { font-size: 36px; margin: 20px 0; line-height: 1.2; color: var(--dark); }
+        h2 { font-size: 24px; margin: 15px 0; color: #333; }
+        p { font-size: 17px; color: #444; line-height: 1.8; }
+
+        .sub-news-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        @media (min-width: 600px) { .sub-news-grid { grid-template-columns: 1fr 1fr; } }
+        .sub-card { background: white; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
+        .sub-card img { width: 100%; height: 200px; object-fit: cover; }
+        .sub-content { padding: 15px; }
+
+        .sidebar { background: #fff; padding: 25px; border-radius: 4px; height: fit-content; border-top: 5px solid var(--dark); }
+        .sidebar h3 { border-bottom: 3px solid var(--primary); padding-bottom: 10px; margin-bottom: 20px; }
+        .live-dot { height: 10px; width: 10px; background-color: #ff0000; border-radius: 50%; display: inline-block; margin-right: 5px; animation: blinker 1.5s linear infinite; }
+        @keyframes blinker { 50% { opacity: 0; } }
+
+        footer { background: var(--dark); color: white; text-align: center; padding: 60px 20px; border-top: 10px solid var(--primary); margin-top: 50px; }
+        .footer-founder { margin-top: 25px; color: var(--gold); font-size: 18px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">AZ<span>GLOBE</span></div>
+    <div class="founder">SAYTIN QURUCUSU: NAZİR İBRAHİMOV</div>
+</header>
+
+<div class="nav">
+    <a href="#">HƏRBİ XƏBƏRLƏR</a> <a href="#">SİYASƏT</a> <a href="#">DÜNYA</a> <a href="#">ANALİTİKA</a>
+</div>
+
+<div class="breaking-strip">
+    <marquee scrollamount="10"><span class="live-dot"></span> SON DƏQİQƏ: Tehranda fövqəladə vəziyyət elan olundu... Pentaqon Yaxın Şərqə 5000 əlavə hərbçi göndərir... İsrail ordusu "Dəmir Qalxan" əməliyyatına başladı...</marquee>
+</div>
+
+<div class="container">
+    <main>
+        <article class="main-news">
+            <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?w=1200" alt="Hərbi Gərginlik">
+            <div class="content">
+                <span class="badge">DÜNYA / SON HƏFTƏ</span>
+                <h1>Yaxın Şərq Müharibənin astanasında: ABŞ və İran qarşı-qarşıya</h1>
+                <p>Son 7 gündə yaşanan hadisələr regionu alova bürüyüb. İranın nüvə obyektlərinə qarşı iddia edilən kiber-hücumdan sonra Tehran rəsmi Vaşinqtonu birbaşa hədəf alıb. Nazir İbrahimovun özəl analizinə görə, bu gərginlik son 30 ilin ən kritik nöqtəsidir.</p>
+            </div>
+        </article>
+
+        <div class="sub-news-grid">
+            <div class="sub-card">
+                <img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?w=600" alt="Hərbi Gəmilər">
+                <div class="sub-content">
+                    <span class="badge">HƏRBİ</span>
+                    <h2>Pentaqonun "USS Lincoln" gəmisi bölgədə</h2>
+                    <p>ABŞ-ın ən böyük aviadaşıyıcısı Hörmüz boğazına daxil olub. İran tərəfi bunu "açıq təxribat" adlandırıb.</p>
+                </div>
+            </div>
+            <div class="sub-card">
+                <img src="https://images.unsplash.com/photo-1447069387593-a5de0862481e?w=600" alt="İsrail">
+                <div class="sub-content">
+                    <span class="badge">İSRAİL</span>
+                    <h2>Netanyahu: "Cavabımız amansız olacaq"</h2>
+                    <p>İsrail Baş Naziri son kabinet iclasında İranın mümkün raket hücumlarına qarşı bütün ssenarilərin hazır olduğunu bildirib.</p>
+                </div>
+            </div>
+            <div class="sub-card">
+                <img src="https://images.unsplash.com/photo-1554224155-1696413565d3?w=600" alt="İqtisadiyyat">
+                <div class="sub-content">
+                    <span class="badge">İQTİSADİYYAT</span>
+                    <h2>Neft qiymətləri 120 dolları keçdi</h2>
+                    <p>Müharibə riski qlobal bazarları sarsıdır. Brent markalı neft son həftənin rekordunu qırıb.</p>
+                </div>
+            </div>
+            <div class="sub-card">
+                <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600" alt="Kiber">
+                <div class="sub-content">
+                    <span class="badge">TEXNOLOJİ SAVAŞ</span>
+                    <h2>Kiber-Hücumlar: Elektrik şəbəkələri hədəfdə</h2>
+                    <p>AzGlobe mütəxəssisləri Tehran və Tel-Əvivdə genişmiqyaslı internet kəsintiləri müşahidə edirlər.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside>
+        <div class="sidebar">
+            <h3>🔴 CANLI YENİLƏNMƏ</h3>
+            <p><strong>02:15</strong> - ABŞ Prezidenti Milli Təhlükəsizlik Şurasını topladı.</p>
+            <hr>
+            <p><strong>01:40</strong> - İranın ballistik raket sistemləri hazır vəziyyətə gətirilib.</p>
+            <hr>
+            <p><strong>00:50</strong> - Bakıdan çağırış: "Bütün tərəfləri təmkinli olmağa dəvət edirik."</p>
+            <hr>
+            <h3>REDAKTORUN SÖZÜ</h3>
+            <p style="font-style: italic;">"Bu gərginlik təkcə bir regionun deyil, bütün dünyanın gələcəyini müəyyən edəcək."</p>
+            <p><strong>— Nazir İbrahimov</strong></p>
+        </div>
+    </aside>
+</div>
+
+<footer>
+    <div class="logo">AZ<span>GLOBE</span></div>
+    <p>DÜNYANIN NƏBZİ, AZƏRBAYCANIN SƏSİ</p>
+    <div class="footer-founder">Baş Redaktor: Nazir İbrahimov</div>
+    <div style="margin-top:20px; opacity:0.5; font-size: 12px;">
+        &copy; 2026 AzGlobe Media Network. Bütün hüquqlar Nazir İbrahimov tərəfindən qorunur.
+    </div>
+</footer>
+
+</body>
+</html>
